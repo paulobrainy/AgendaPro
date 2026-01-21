@@ -1,12 +1,44 @@
-# Python
+# --- Python ---
 venv/
+.venv/
+env/
+bin/
+lib/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 .env
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Flutter/Dart
+# --- Flutter/Dart ---
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 build/
 **/*.lock
+# Ignorar arquivos gerados automaticamente que causam avisos de LF/CRLF
+**/android/**/generated/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/linux/flutter/generated_plugin_registrant.cc
+**/linux/flutter/generated_plugin_registrant.h
+**/linux/flutter/generated_plugins.cmake
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugin_registrant.h
+**/windows/flutter/generated_plugins.cmake
+
+# --- IDEs e Editores ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Sistema ---
+Thumbs.db
+desktop.ini
